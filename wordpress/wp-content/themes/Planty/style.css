@@ -12,6 +12,20 @@
  Text Domain:  brico-tips
 */
 
+.cannette-section {
+    width: 100%; /* L'élément couvre toute la largeur */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrer l'image si nécessaire */
+}
+
+.cannette-section .cannette-image {
+    width: 100%; /* L'image couvre toute la largeur */
+    height: auto; /* Garde les proportions de l'image */
+    display: block; /* Retirer l'espace sous l'image */
+    object-fit: cover; /* L'image couvre complètement l'espace */
+}
+
 .site-footer {
     background-color: #fff !important; 
     color: #000 !important; 
@@ -27,3 +41,5 @@
 .site-footer a:hover {
     text-decoration: underline;
 }
+
+
