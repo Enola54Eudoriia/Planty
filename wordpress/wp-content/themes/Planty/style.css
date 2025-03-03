@@ -11,3 +11,19 @@
  Tags:         boisson, naturel, plante
  Text Domain:  brico-tips
 */
+
+.site-footer {
+    background-color: #fff !important; /* Fond blanc */
+    color: #000 !important; /* Texte en noir */
+    text-align: center !important; /* Centre le texte */
+    padding: 20px 0; /* Ajoute de l'espace en haut et en bas */
+}
+
+.site-footer a {
+    color: #000 !important; /* Lien en noir */
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
