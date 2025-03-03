@@ -15,7 +15,7 @@
 
 <?php do_action('ocean_footer'); ?>
 <footer class="site-footer">
-	<div class="container">
+	<div>
 		<p><a href="<?php echo esc_url(get_permalink(get_page_by_path('mentions-legales'))); ?>">Mentions légales</a></p>
 	</div>
 </footer>

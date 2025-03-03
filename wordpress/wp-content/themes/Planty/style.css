@@ -13,14 +13,14 @@
 */
 
 .site-footer {
-    background-color: #fff !important; /* Fond blanc */
-    color: #000 !important; /* Texte en noir */
-    text-align: center !important; /* Centre le texte */
-    padding: 20px 0; /* Ajoute de l'espace en haut et en bas */
+    background-color: #fff !important; 
+    color: #000 !important; 
+    text-align: center !important; 
+    padding: 20px 0; 
 }
 
 .site-footer a {
-    color: #000 !important; /* Lien en noir */
+    color: #000 !important; 
     text-decoration: none;
 }
 
