@@ -13,17 +13,17 @@
 */
 
 .cannette-section {
-    width: 100%; /* L'élément couvre toute la largeur */
+    width: 100%; 
     margin: 0;
     padding: 0;
-    text-align: center; /* Centrer l'image si nécessaire */
+    text-align: center; 
 }
 
 .cannette-section .cannette-image {
-    width: 100%; /* L'image couvre toute la largeur */
-    height: auto; /* Garde les proportions de l'image */
-    display: block; /* Retirer l'espace sous l'image */
-    object-fit: cover; /* L'image couvre complètement l'espace */
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
 }
 
 .site-footer {

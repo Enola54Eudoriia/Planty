@@ -80,7 +80,6 @@ if ('fullscreen' === oceanwp_mobile_menu_style()) {
 ?>
 
 <?php wp_footer(); ?>
-<p>DEBUG : Footer chargé</p>
 
 </body>
 
