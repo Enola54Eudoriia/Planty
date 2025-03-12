@@ -7,11 +7,6 @@
  */
 
 ?>
-<?php if (!is_page('commander')) : ?>
-    <div class="cannette-section">
-        <img src="http://localhost/planty/wordpress/wp-content/uploads/2025/03/Mask-group-3.png" alt="Collection de cannettes" class="cannette-image">
-    </div>
-<?php endif; ?>
 </main><!-- #main -->
 
 <?php do_action('ocean_after_main'); ?>

@@ -91,99 +91,179 @@ body * {
     margin-right: 20px;
 }
 
-.wpforms-container {
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-	position: relative ;
-	background: transparent ;
+#wpcf7-f226-p20-o1 {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 7px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.wpforms-form {
-    padding: 30px ;
-    border-radius: 10px ;
-    width: 100% ;
-    max-width: 500px ;
+#wpcf7-f226-p20-o1 input[name="your-name"],
+#wpcf7-f226-p20-o1 input[name="your-email"] {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-.wpforms-form label {
-    font-size: 18px ;
-    font-weight: normal ;
-    display: block ;
-    margin-bottom: 8px ;
-    color: black ;
-    font-family: Arial, Helvetica, sans-serif ;
+#wpcf7-f226-p20-o1 input[name="your-subject"] {
+    width: 383px;
+    height: 237px;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px; 
 }
 
-.wpforms-form .wpforms-required-label {
-	display: none
+#wpcf7-f226-p20-o1 input[type="submit"],
+#wpcf7-f226-p20-o1 button {
+    width: 198px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #E0B9B4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
 }
 
-.wpforms-form input[type="text"],
-.wpforms-form input[type="email"] {
-    width: 383px ;
-	  max-width: 100% ;
-    height: 71px ;
-    padding: 15px ;
-    border: none ;
-    border-radius: 7px ;
-    background-color: white ;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) ;
-    font-size: 16px ;
-    font-family: Arial, Helvetica, sans-serif ;
-    box-sizing: border-box ;
+#wpcf7-f226-p20-o1 input[type="submit"]:hover,
+#wpcf7-f226-p20-o1 button:hover {
+    background-color: #C02E44;
 }
 
-.wpforms-form textarea {
-    width: 383px ;
-    height: 237px ;
-    padding: 15px ;
-    border: none ;
-    border-radius: 7px ;
-    background-color: white ;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) ;
-    font-size: 16px ;
-    font-family: Arial, Helvetica, sans-serif ;
-    box-sizing: border-box ;
-    resize: none ;
+#wpcf7-f226-p20-o1 label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
 }
 
-.wpforms-submit {
-    background-color: #E0B9B4 ;
-    color: white ;
-    border: none ;
-    border-radius: 5px ;
-    padding: 0px ;
-    font-size: 18px ;
-    font-family: Arial, Helvetica, sans-serif ;
-    cursor: pointer ;
-    width: 100% ;
-    max-width: 198px ;
-	  height: 55px ;
-    margin-left: 85px ;
-    text-align: center ;
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-    text-transform: none ;
-    font-weight: normal ;
+#wpcf7-f226-p20-o1 .elementor-widget-image #wp-image-115 {
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
 }
 
-.wpforms-submit:hover {
-    background-color: #C02E44 ;
+/* Conteneur principal du formulaire de commande */
+#wpcf7-f378-p2-o1 .wpcf7-form {
+    display: flex; /* Affiche le formulaire en mode flexbox pour organiser les éléments */
+    justify-content: center; /* Centre les colonnes horizontalement */
+    gap: 60px; /* Ajoute un espacement entre les deux sections */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    max-width: 1440px; /* Définit une largeur maximale pour éviter qu'il soit trop large */
+    margin: auto; /* Centre le formulaire sur la page */
 }
 
-
-.wp-image-115 {
-    position: absolute ;
-    left: 50% ;
-    width: 147.32px ;
-    height: 134.97px ;
-    bottom: -50px ;
-    z-index: -1 ;
-	  transform: translate(-195%, -120%);
+#wpcf7-f378-p2-o1 .form-left, 
+#wpcf7-f378-p2-o1 .form-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Sections du formulaire (deux colonnes) */
+#wpcf7-f378-p2-o1 .wpcf7-form p:nth-child(odd) {
+    width: 45%; /* Chaque champ occupe environ la moitié du formulaire */
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    flex-direction: column; /* Met les labels au-dessus des champs */
+}
 
+#wpcf7-f378-p2-o1 .wpcf7-form p:nth-child(even) {
+    width: 45%; /* Idem pour l'autre moitié */
+    display: flex;
+    flex-direction: column;
+}
 
+/* Séparateur entre les deux parties */
+#wpcf7-f378-p2-o1 .wpcf7-form::before {
+    content: ""; /* Ajoute un élément visuel (ligne verticale) */
+    width: 2px; /* Définit l'épaisseur du séparateur */
+    background-color: white; /* Donne une couleur au séparateur */
+    position: absolute; /* Positionne l'élément de manière absolue */
+    height: 70%; /* Prend toute la hauteur du formulaire */
+    left: 50%; /* Place le séparateur au milieu */
+    transform: translateX(-50%); /* Centre le séparateur précisément */
+}
 
+/* Style des labels (titres des champs) */
+#wpcf7-f378-p2-o1 .wpcf7-form label {
+    color: white; /* Change la couleur du texte en blanc */
+    font-weight: normal; /* Met le texte en gras */
+    margin-bottom: 15px; /* Ajoute un petit espace sous chaque label */
+}
+
+/* Style des champs de texte */
+#wpcf7-f378-p2-o1 .wpcf7-form input,
+#wpcf7-f378-p2-o1 .wpcf7-form textarea {
+    background-color: #f0f0f0; /* Modifie la couleur de fond des champs */
+    border: 1px solid #ccc; /* Ajoute une bordure grise */
+    border-radius: 10px; /* Arrondit les bords des champs */
+    padding: 10px; /* Ajoute un espace intérieur pour un meilleur confort visuel */
+    width: 383px; /* Fait en sorte que les champs occupent toute la largeur disponible */
+    box-sizing: border-box; /* Empêche le padding d'augmenter la taille des champs */
+    height: 71px;
+    margin-top: 15px;
+}
+
+/* Style du bouton "Envoyer" */
+#wpcf7-f378-p2-o1 .wpcf7-form .wpcf7-submit {
+    display: block; /* Permet de centrer le bouton */
+    margin: 20px auto; /* Ajoute un espace autour et le centre horizontalement */
+    padding: 10px 20px; /* Ajoute de l'espace à l'intérieur du bouton */
+    background-color: #E0B9B4; /* Définit la couleur du bouton */
+    color: white; /* Met le texte en blanc */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 5px; /* Arrondit les coins du bouton */
+    font-weight: bold; /* Rend le texte plus visible */
+    cursor: pointer; /* Change le curseur en main au survol */
+    width: 198px;
+    height: 55px;
+}
+
+/* Effet au survol du bouton */
+#wpcf7-f378-p2-o1 .wpcf7-form .wpcf7-submit:hover {
+    background-color: #C02E44; /* Change la couleur au survol pour un effet interactif */
+}
+
+.form-title {
+    font-size: 30px; /* Taille du texte */
+    color: #fff; /* Couleur du texte */
+    margin-bottom: 40px; /* Espace sous le titre */
+}
+
+.elementor-2 .elementor-element.elementor-element-921b799.elementor-element,
+.elementor-2 .elementor-element.elementor-element-0df0bb8.elementor-element,
+.elementor-2 .elementor-element.elementor-element-6b8da56.elementor-element,
+.elementor-2 .elementor-element.elementor-element-3e18906.elementor-element {
+    --align-self: center;
+    justify-self: center;
+    width: 36px;
+    height: 56px;
+}
+
+.elementor-2 .elementor-element.elementor-element-921b799 > .elementor-widget-container,
+.elementor-2 .elementor-element.elementor-element-0df0bb8 > .elementor-widget-container,
+.elementor-2 .elementor-element.elementor-element-6b8da56 > .elementor-widget-container,
+.elementor-2 .elementor-element.elementor-element-3e18906 > .elementor-widget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
