@@ -19,7 +19,7 @@
 }
 
 body * {
-   font-family: 'Roboto', sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 .hover-effect img {
@@ -31,12 +31,6 @@ body * {
    transform: scale(1.05) translateY(-10px);
 }
 
-.cannette-image {
-    width: 100%;      
-    height: auto;     
-    display: block;   
-    margin: 0;        
-}
 .site-footer {
     background-color: #fff ; 
     color: #000 ; 
@@ -78,7 +72,8 @@ body * {
 }
 
 #menu-item-43 a .text-wrap {
-    padding: 10px 40px; 
+    padding: 10px 40px;
+    color: white; 
 }
 
 #menu-item-29 {
@@ -90,22 +85,6 @@ body * {
     margin-left: 20px;
     margin-right: 20px;
 }
-
-.container-gout {
-    position: relative;
-} 
-
-.container-gout img {
-    position: absolute;
-    top: 0;
-    left: 0;
-} 
-
-.container-gout p {
-    position: absolute;
-    top: 0;
-    left: 0;
-} 
 
 #nous-rencontrer-contact {
     position: relative;
@@ -273,10 +252,10 @@ body * {
     width: 2px;
     background-color: white;
     position: absolute;
-    height: 70%;
+    height: 447px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 53px;
+    bottom: 228px;
 }
 
 #wpcf7-f378-p2-o1 .wpcf7-form label {
@@ -309,6 +288,7 @@ body * {
     cursor: pointer;
     width: 198px;
     height: 55px;
+    text-transform: none;
 }
 
 #wpcf7-f378-p2-o1 .wpcf7-form .wpcf7-submit:hover {
