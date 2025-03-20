@@ -8,34 +8,23 @@ function theme_enqueue_styles()
 
 function ajouter_lien_admin_menu($items, $args) {
     $items_array = explode('</li>', $items);
-    
-    array_pop($items_array);
+    array_pop($items_array); // Supprime le dernier élément vide après l'explosion
 
+    // Vérifier si l'utilisateur est connecté
     if (is_user_logged_in()) {
         $lien_admin = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
-        $lien_logout = '<li class="menu-item"><a href="' . wp_logout_url(home_url()) . '">Déconnexion</a></li>';
-        
+
+        // Insérer le bouton Admin après "Nous rencontrer"
         foreach ($items_array as $index => $item) {
             if (strpos($item, 'Nous rencontrer') !== false) {
                 array_splice($items_array, $index + 1, 0, $lien_admin);
                 break;
             }
         }
-
-        $items = implode('</li>', $items_array) . '</li>' . $lien_logout;
-    } else {
-        $lien_login = '<li class="menu-item"><a href="' . wp_login_url() . '">Connexion</a></li>';
-        
-        foreach ($items_array as $index => $item) {
-            if (strpos($item, 'Nous rencontrer') !== false) {
-                array_splice($items_array, $index + 1, 0, $lien_login);
-                break;
-            }
-        }
-
-        $items = implode('</li>', $items_array) . '</li>';
     }
-    
+
+    // Reconstruire le menu et retourner
+    $items = implode('</li>', $items_array) . '</li>';
     return $items;
 }
 

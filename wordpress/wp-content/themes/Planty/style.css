@@ -58,7 +58,7 @@ body * {
 }
 
 #menu-item-43 .menu-link:hover {
-    background-color: #E0B9B4;
+    background-color: #C02E44;
     color:  white ;
 	  font-weight: normal
 }
@@ -318,4 +318,45 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #feuilles {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wpcf7-form {
+        display: flex;
+        flex-direction: column; /* Mets les champs en colonne */
+        align-items: center; /* Centre les éléments */
+        gap: 10px; /* Espacement entre chaque champ */
+    }
+
+    .wpcf7-form input[type="number"] {
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 15px; /* Ajoute un petit espace entre l'image et le bouton */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #wpcf7-f378-p2-o1 .wpcf7-form::before{ 
+        display: none; /* Cache un éventuel séparateur */
+    }
+
+    .form-container::after {
+        display: none;
+    }
+
+    #wpcf7-f378-p2-o1 .products p {
+        width: 50px;
+        height: 40px;
+        margin-left: 262px;
+        margin-top: -578px;
+        gap: 24px;
+    }
 }
